@@ -1,0 +1,120 @@
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <title>
+        비도 오고 그래서
+    </title>
+    <link rel="shortcut icon" href="../logo.svg">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#topBar-Contents").load("../topbar.html");
+        });
+    </script>
+
+    <script type="text/javascript" src="../js/detail.js"></script>
+
+    <style>
+        #image {
+            float: left;
+            width: 52%;
+            box-sizing: border-box;
+            height: 500px;
+            background: url('../img/m-air-black.JPG');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px; width: 100%;">
+    <div style="width: 100%; height: 53px; position: fixed;" id="topBar">
+        <div id="topBar-Contents"></div>
+    </div>
+
+    <section class="mainSection">
+        <div id="image"></div>
+        <div class="itemDescription">
+            <div class="itemName">
+                <h1 id="itemName">M Air</h1>
+
+                <h4>한국 우산공사에서 직접 출고한 올겨울 최고의 히트아이템<br>눈덮힌 겨울에 저 우산만있다면 패션 피플로 전락가능</h4>
+            </div>
+            <div class="itemData">
+                <h4>9,900원</h4>
+
+                <p class="colorSelector-outline">
+                    <span id="black" class="colorSelector" onclick="colorSelect('m-air', 'black')">●</span>
+                    <span id="orange" class="colorSelector" onclick="colorSelect('m-air', 'orange')">●</span>
+                </p>
+            </div>
+
+            <div class="purchaseDivision"><button>결제하기</button></div>
+
+        </div>
+    </section>
+
+    <!-- 서브 디테일 -->
+    <section class="subSection">
+        <div class="in-detail">
+            <div class="detailData">
+                <h3>무게</h3>
+                <h4>123g</h4>
+            </div>
+            <div class="detailData">
+                <h3>크기</h3>
+                <h4>1000π</h4>
+            </div>
+            <div class="detailData">
+                <h3>풍동 실험</h3>
+                <h4>55mph</h4>
+            </div>
+        </div>
+        <div class="others">
+            <p>
+                뜨거운 여름, 바다에서 정렬적인 당신을 위한 휴식소가 되어드리는 크고 넓고 듬직한 이 파라솔.<br>
+                안사면 너도 흑우.
+            </p>
+
+            <div>
+                <h3>다른 아이템도 아래에서 확인해보세요.</h3>
+                <div class="in-detail">
+                    <div class="elseItem"><a href="../detail/parao-x-max">
+                            <div id="parao-x-max" class="elseItem-img"></div>
+                            <div>
+                                <h4>파라오 X Max</h4>
+                            </div>
+                        </a></div>
+                    <div class="elseItem"><a href="../detail/parao-xb-max">
+                            <div id="parao-xb-max" class="elseItem-img"></div>
+                            <div>
+                                <h4>파라오 XB Max</h4>
+                            </div>
+                        </a></div>
+                    <div class="elseItem"><a href="../detail/us-yr">
+                            <div id="us-yr" class="elseItem-img"></div>
+                            <div>
+                                <h4>US Yr</h4>
+                            </div>
+                        </a></div>
+                    <div class="elseItem"><a href="../detail/t-pro">
+                            <div id="t-pro" class="elseItem-img"></div>
+                            <div>
+                                <h4>T Pro</h4>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

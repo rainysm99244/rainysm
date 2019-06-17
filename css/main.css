@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&subset=korean');
+
+.mainSection{
+    padding-top: 53px;
+    margin: 0px;
+    
+}
+
+.mainItems{
+    margin-bottom: 20px;
+    height: 600px;
+    width: 100%;
+    
+    
+    padding-top: 50px;
+    
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#firstItem{
+    background: url("../img/parao-x-max-red.JPG") no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#secondItem{
+    background: url("../img/parao-xb-max-blue.JPG") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#s-firstItem{
+    background: url("../img/us-yr-sky.JPG") no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#s-secondItem{
+    background: url("../img/m-air-black.JPG") no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#s-thirdItem{
+    background: url("../img/t-pro-hotpink.JPG") no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#s-introduceItem{
+    background: url("../img/IMG_2694.JPG") no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.subItem-left{
+    padding-top: 25px;
+    width: 49.2%;
+    height: 500px;
+    float: left;
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subItem-right{
+    padding-top: 25px;
+    width: 49.2%;
+    height: 500px;
+    float: right;
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.itemDescription{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.itemName{
+    font-size: 60px;
+    font-weight:700;
+    margin: 0;
+}
+
+.detailDivision{
+    color: rgba(133, 186, 253, 1);
+    margin: 20px;
+}
+
+.details{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    
+    text-shadow:0px 0px 2px #111, 0 0 3px #333, 0 0 5px #333;
+}
+
+.s-descriptions{
+    text-shadow:0px 0px 3px #fff;
+}
+
+
+.s-itemDescription{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.s-itemName{
+    font-size: 40px;
+    font-weight:600;
+    margin: 0;
+}
+
+.s-details{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    
+    text-shadow:0px 0px 2px #111, 0 0 3px #333, 0 0 5px #333;
+}
+
+.s-details:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.details:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.descriptions{
+    text-shadow:#333 0px 0px 8px;
+}
+
+.layoutSetter{
+    width: 100%;
+}

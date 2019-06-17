@@ -1,0 +1,95 @@
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>
+            비도 오고 그래서
+        </title>
+        <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" type="text/css" href="/css/commons.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#topBar-Contents").load("topbar.html");
+            });
+        </script>
+        
+        <script src="js/main.js"></script>
+    </head>
+    <body style="margin: 0px; width: 100%;">
+        <div style="width: 100%; height: 53px; position: fixed;" id="topBar">
+            <div id="topBar-Contents"></div>
+        </div>
+
+        <!-- 최근에 나온 동일 라인업을 최소 2개 표시 -->
+        <section class="mainSection">
+                <div class="mainItems" id="firstItem">
+                   <div class="descriptions">
+                       <p class="itemName">파라오 X Max</p>
+                        <p class="itemDescription">오늘 같이 추운 날에는 초대형 특수제작</p>
+                    </div>
+                    <div class="detailDivision">
+                        <span class="details" onclick="details('parao-x-max')">자세히 보기 <i class="fas fa-chevron-right"></i></span><span class="details" onclick="buyNew('parao-x-max')">구입하기 <i class="fas fa-chevron-right"></i> </span>
+                    </div>
+                </div>
+                <div class="mainItems" id="secondItem">
+                   <div class="descriptions">
+                        <p class="itemName">파라오 XB Max</p>
+                        <p class="itemDescription">황사부는 날 초대형 쉴드 우산</p>
+                    </div>
+                    <div class="detailDivision">
+                        <span class="details" onclick="details('parao-xb-max')">자세히 보기 <i class="fas fa-chevron-right"></i></span><span class="details" onclick="buyNew('parao-xb-max')">구입하기 <i class="fas fa-chevron-right"></i> </span>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 최근에 나온 동일하지 않은 라인업 또는 광고를 짝수개 표시 -->
+        <section class="subSection">
+            <div class="layoutSetter">
+                <div class="subItem-left" id="s-firstItem">
+                    <div class="s-descriptions">
+                            <p class="s-itemName">US Yr</p>
+                            <p class="s-itemDescription">가벼운. 편한. 실용적인.</p>
+                        </div>
+                        <div class="detailDivision">
+                            <span class="s-details" onclick="details('us-yr')">자세히 보기 <i class="fas fa-chevron-right"></i></span><span class="s-details" onclick="buyNew('us-yr')">구입하기 <i class="fas fa-chevron-right"></i> </span>
+                        </div>
+                </div>
+            
+                <div class="subItem-right" id="s-secondItem">
+                    <div class="s-descriptions">
+                            <p class="s-itemName">M Air</p>
+                            <p class="s-itemDescription">주머니에 넣어도 느껴지지 않는 초미니 경량형 우산</p>
+                        </div>
+                        <div class="detailDivision">
+                            <span class="s-details" onclick="details('m-air')">자세히 보기 <i class="fas fa-chevron-right"></i></span><span class="s-details" onclick="buyNew('m-air')">구입하기 <i class="fas fa-chevron-right"></i> </span>
+                        </div>
+                </div>
+            </div>
+            <div class="layoutSetter">
+                <div class="subItem-left" id="s-thirdItem">
+                    <div class="s-descriptions">
+                        <p class="s-itemName">T Pro</p>
+                        <p class="s-itemDescription">튼튼함. 거센비와 직사광선도 막는. 프로를 위한.</p>
+                    </div>
+                    <div class="detailDivision">
+                        <span class="s-details" onclick="details('t-pro')">자세히 보기 <i class="fas fa-chevron-right"></i></span><span class="s-details" onclick="buyNew('t-pro')">구입하기 <i class="fas fa-chevron-right"></i> </span>
+                    </div>
+                </div>
+                <div class="subItem-right" id="s-introduceItem">
+                <div class="s-descriptions">
+                            <p class="s-itemName">비도 오고 그래서</p>
+                            <p class="s-itemDescription">우리들을 소개합니다.</p>
+                        </div>
+                        <div class="detailDivision" onclick="goIntroduce()">
+                            <span class="s-details">소개 페이지로 이동하기 <i class="fas fa-chevron-right"></i></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.terms-toggle{
+    text-align: right;
+    -webkit-transition:color 0.3s, -webkit-transform 0.3s;
+    transition:color 0.3s, transform 0.3s;
+}
+
+.terms-toggle:hover{
+    color: #555;
+    cursor: pointer;
+}

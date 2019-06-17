@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+*{ font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 36pt;
+    color: #000000;
+    margin: 10;
+}
+
+h2{
+    font-size: 28pt;
+    color: #000000;
+    margin: 0;
+}
+
+h3{
+    font-size: 22pt;
+    color: #000000;
+    margin: 0;
+}
+
+h4{
+    font-size: 16pt;
+    color: #000000;
+    margin: 0;
+}

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&subset=korean");
+
+a:link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+.mainSection {
+    padding-top: 53px;
+    margin-bottom: 30px;
+    width: 100%;
+    float: left;
+
+    display: table-cell;
+    vertical-align: middle;
+    
+    background: #f9f9f9;
+    
+}
+
+.subSection {
+    width: 100%;
+    text-align: center;
+}
+
+.in-detail{
+    display: inline-block;   
+    padding: 20px 0px;
+}
+
+.elseItem{
+    float: left;
+    padding: 10px 20px;
+}
+
+.elseItem:hover{
+    text-decoration:underline;
+}
+
+.others{
+    margin-top: 30px;
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+.detailData{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.itemDescription {
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+    text-align: center;
+    height: 500px;
+    
+    position: relative;
+}
+
+.elseItem-img{
+    height: 200px;
+    width: 220px;
+}
+
+#parao-x-max{
+    background: url("../img/parao-x-max-red.JPG") no-repeat center;
+    background-size: cover;
+}
+
+#parao-xb-max{
+    background: url("../img/parao-xb-max-blue.JPG") no-repeat center;
+    background-size: cover;
+}
+
+#us-yr{
+    background: url("../img/us-yr-sky.JPG") no-repeat center;
+    background-size: cover;
+}
+
+#m-air{
+    background: url("../img/m-air-black.JPG") no-repeat center;
+    background-size: cover;
+}
+
+#t-pro{
+    background: url("../img/t-pro-hotpink.JPG") no-repeat center;
+    background-size: cover;
+}
+
+#itemName{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h4{
+    padding: 10px 30px;
+}
+
+.purchaseDivision{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;    
+}
+
+button{
+    font-size: 18px;
+    
+    width: 200px;
+    height: 55px;
+    padding: 10px 30px;
+
+    background: linear-gradient(-90deg, rgba(250, 112, 155, 1), rgba(80, 162, 253, 1));
+    border: none;
+    color: white;
+    
+    border-radius: 30px;
+    
+    -webkit-transition:box-shadow 0.2s, -webkit-transform 0.2s;
+    transition:box-shadow 0.2s, transform 0.2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px #888888;
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 3px 3px 5px #888888;
+}
+
+.itemData{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.colorSelector-outline{
+    margin: 15px;
+}
+
+.colorSelector{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.colorSelector:hover{
+    cursor: pointer;
+}
+
+#red{
+    color: rgba(182, 21, 19, 1);
+    -webkit-text-stroke: 7px rgba(182, 21, 19, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#red:hover{
+    color: rgba(182, 21, 19, .8);
+}
+
+#orange{
+    color: rgba(210, 143, 50, 1);
+    -webkit-text-stroke: 7px rgba(210, 143, 50, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#orange:hover{
+    color: rgba(210, 143, 50, .8);
+}
+
+#black{
+    color: rgba(67, 64, 59, 1);
+    -webkit-text-stroke: 7px rgba(67, 64, 59, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#black:hover{
+    color: rgba(67, 64, 59, .8);
+}
+
+#blue{
+    color: rgba(33, 81, 253, 1);
+    -webkit-text-stroke: 7px rgba(33, 81, 253, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#blue:hover{
+    color: rgba(33, 81, 253, .8);
+}
+
+#hotpink{
+    color: rgba(217, 96, 196, 1);
+    -webkit-text-stroke: 7px rgba(217, 96, 196, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#hotpink:hover{
+    color: rgba(217, 96, 196, .8);
+}
+
+#sky{
+    color: rgba(68, 174, 213, 1);
+    -webkit-text-stroke: 7px rgba(68, 174, 213, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#sky:hover{
+    color: rgba(68, 174, 213, .8);
+}
+
+#green{
+    color: rgba(1, 141, 32, 1);
+    -webkit-text-stroke: 7px rgba(1, 141, 32, .4);
+    
+    -webkit-transition:color 0.2s, -webkit-transform 0.2s;
+    transition:color 0.2s, transform 0.2s;
+}
+
+#green:hover{
+    color: rgba(1, 141, 32, .8);
+}

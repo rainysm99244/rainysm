@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>비도 오고 그래서 - 로그인</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="logo.svg">
+    <script src="js/login.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+            $("#topBar-Contents").load("topbar.html");
+        });
+
+
+
+        $(document).ready(function() {
+            $("#userIdInput").focusout(function() {
+                if (document.getElementById("userIdInput").value == "")
+                    $("#userIdIndicator").animate({
+                        marginTop: "+=30px",
+                        fontSize: "+=5px"
+                    }, 200);
+            });
+            $("#userIdInput").focusin(function() {
+                if (document.getElementById("userIdInput").value == "")
+                    $("#userIdIndicator").animate({
+                        marginTop: "-=30px",
+                        fontSize: "-=5px"
+                    }, 200);
+            });
+
+            $("#userPasswordInput").focusout(function() {
+                if (document.getElementById("userPasswordInput").value == "")
+                    $("#userPasswordIndicator").animate({
+                        marginTop: "+=35px",
+                        fontSize: "+=5px"
+                    }, 200);
+            });
+            $("#userPasswordInput").focusin(function() {
+                if (document.getElementById("userPasswordInput").value == "")
+                    $("#userPasswordIndicator").animate({
+                        marginTop: "-=35px",
+                        fontSize: "-=5px"
+                    }, 200);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div style="height: 53px; width: 100%; top: 0; position: fixed;" id="topBar">
+        <div id="topBar-Contents"></div>
+    </div>
+
+    <div class="bg-container">
+        <div class="container">
+            <div id="leftDivision">
+                <p>환영합니다</p>
+            </div>
+            <div id="rightDivision">
+                <table>
+                    <tr style="height: 130px;">
+                        <td>
+                            <div class="headContainer">
+                                <span>로그인</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="height: 240px;">
+                        <td>
+                            <div class="formContainer">
+                                <div class="formInContainer">
+                                    <div class="userIdField">
+                                        <label id="userIdIndicator" class="inputIndicator" for="userIdInput">Username</label>
+                                        <input type="email" id="userIdInput" autocorrect="off" autocapitalize="off" autofocus>
+                                    </div>
+                                    <div class="userPasswordField">
+                                        <label id="userPasswordIndicator" class="inputIndicator" for="userPasswordInput">Password</label>
+                                        <input type="password" id="userPasswordInput">
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="buttonContainer">
+                                <tr>
+                                    <td style="height: 100%;">
+                                        <div class="registerContainer">
+                                            <div onclick="registerOnClick()">회원가입</div>
+                                        </div>
+                                    </td>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height: 130px;">
+                        <td>
+                            <table class="buttonContainer">
+                                <tr>
+                                    <td>
+                                        <button id="btnLogin" onclick="loginBtn_Click()">로그인
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--
+    <div class="formContainer">
+        <h1 class="loginText">로그인</h1><div id="register" onclick="registerOnClick()">회원가입</div>
+        <div class="inputField">
+            <input type="email" id="userIdInput" autocorrect="off" autocapitalize="off" autofocus>
+        </div>
+        <div class="inputField">
+            <input type="password" id="userPasswordInput">
+        </div>
+
+
+        <div class="submitField">
+            <button onclick="submitOnClick()" type="submit">로그인</button>
+        </div>
+    </div>
+    -->
+            <div class="blur"></div>
+        </div>
+    </div>
+</body>
+
+</html>

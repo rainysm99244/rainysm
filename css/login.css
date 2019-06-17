@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script|Noto+Serif+KR|Noto+Sans+KR');
+body, .bg-container, .container {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.loginText {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+.bg-container{
+    background-image: url('../img/login-background.JPG');
+    height: 100vh; /* =h */
+    background-size: cover;
+}
+
+.bg-container .container {
+    background: inherit;
+    width: 80%; /* =cw */
+    height: 70%; /* = ch */
+    box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 70%; /* =ct */
+    left: 50%; /* =cl */
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+    max-width: 2000px;
+}
+
+.bg-container .blur {
+    background: inherit;
+    height: 100vh; /* h */
+    width: 125%; /* (100/cw) * 100% */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-10%, -15%); /* -(cl - (cw / 2))%, -(ct - (ch / 2))% */
+    filter: blur(20px);
+
+    z-index: -1;
+}
+
+.headContainer{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.headContainer span {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px 10px 0;
+}
+
+#head-tr{
+    height: 100vh;
+}
+
+.formContainer {
+    /* background: rgba(51, 51, 51, .9); */
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+.formInContainer{
+    margin: auto;
+    width: 80%;
+    align-content: center;
+}
+
+.inputField {
+    margin: 10px;
+    padding-top: 20px;
+}
+
+input {
+    background: transparent;
+    height: 30px;
+    width: 90%;
+    margin: 40px 10px 10px;
+    padding: 5px;
+
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+    display:inline-block;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    position: fixed;
+    margin: 15px;
+}
+
+#userPasswordIndicator{
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.submitField {
+    text-align: center;
+    border: 2px solid gray;
+    padding: 8px 20px;
+    border-radius: 8px;
+
+}
+
+#leftDivision {
+    width: 35%;
+    height: 100vh;
+    display: inline;
+    float: left;
+
+    align-content: center;
+    background: url('../img/photo-1517398629-9d24ea1f4f94.jpg') no-repeat;
+
+    background-size: cover;
+}
+
+#rightDivision {
+    background: rgba(51, 51, 51, .4);
+    float: right;
+    width: 65%;
+    height: 100%;
+    margin: 0;
+
+    color: white;
+
+    /*display: table;*/
+}
+
+#rightDivision table{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+table tr{
+    padding: 0;
+    margin: 0;
+}
+
+tr td{
+    padding: 0;
+    margin: 0;
+}
+
+.buttonContainer{
+    width: 100%;
+
+}
+
+.registerContainer div{
+    width: 90px;
+    height: 100%;
+    padding: 20px 10px 15px 10px;
+    font-size: 20px;
+
+    text-shadow:#333 0 0 10px;
+
+    -webkit-transition:color 0.3s, -webkit-transform 0.3s;
+    transition:color 0.3s, transform 0.3s;
+
+    float: right;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.registerContainer div:hover{
+    color: #CCCCCC;
+    cursor: pointer;
+}
+
+.registerContainer {
+    margin: auto auto 0;
+    width: 80%;
+    align-content: center;
+}
+
+.buttonContainer button{
+    height: 5vh;
+    width: 100%;
+}
+
+#leftDivision p {
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 50px;
+    color: #fff;
+    text-shadow:#333 0 0 10px;
+}
+
+#btnLogin{
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    background-color: rgb(92,132,240);
+    color: #FFFFFF;
+    border: 0;
+    font-size: 20px;
+    text-shadow:rgb(92,132,240) 0px 0px 10px;
+
+    -webkit-transition:background-color 0.3s, -webkit-transform 0.3s;
+    transition:background-color 0.3s, transform 0.3s;
+}
+
+#btnLogin:hover{
+    background-color: rgba(92,132,240, .8);
+}
